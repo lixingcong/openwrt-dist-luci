@@ -1,5 +1,6 @@
 OpenWrt-dist LuCI
 ===
+原作者：[@aa65535](https://github.com/aa65535)
 
 APP 列表
 ---
@@ -21,7 +22,7 @@ APP 列表
 tar xjf OpenWrt-SDK-ar71xx-for-linux-x86_64-gcc-4.8-linaro_uClibc-0.9.33.2.tar.bz2
 cd OpenWrt-SDK-ar71xx-*
 # Clone 项目
-git clone https://github.com/aa65535/openwrt-dist-luci.git package/openwrt-dist-luci
+git clone https://github.com/lixingcong/openwrt-dist-luci.git package/openwrt-dist-luci
 # 编译 po2lmo (如果有po2lmo可跳过)
 pushd package/openwrt-dist-luci/tools/po2lmo
 make && sudo make install
