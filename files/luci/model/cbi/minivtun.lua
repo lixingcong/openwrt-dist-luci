@@ -5,9 +5,9 @@ openwrt-dist-luci: Minivtun
 local m, s, o
 
 if luci.sys.call("pidof minivtun >/dev/null") == 0 then
-	m = Map("Minivtun", translate("Minivtun"), translate("minivtun is running"))
+	m = Map("minivtun", translate("minivtun"), translate("minivtun is running"))
 else
-	m = Map("Minivtun", translate("Minivtun"), translate("minivtun is not running"))
+	m = Map("minivtun", translate("minivtun"), translate("minivtun is not running"))
 end
 
 -- General Setting

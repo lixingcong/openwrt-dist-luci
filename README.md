@@ -12,6 +12,7 @@ APP 列表
  luci-app-redsocks2        | [openwrt-redsocks2][R]   | LuCI Support for RedSocks2
  luci-app-shadowvpn        | [openwrt-shadowvpn][8]   | LuCI Support for ShadowVPN
  luci-app-shadowsocks-spec | [openwrt-shadowsocks][7] | LuCI Support for shadowsocks-libev-spec
+ luci-app-minivtun         | [openwrt-minivtun][9]    | LuCI Support for minivtun
 
 编译说明
 ---
@@ -27,7 +28,7 @@ git clone https://github.com/lixingcong/openwrt-dist-luci.git package/openwrt-di
 pushd package/openwrt-dist-luci/tools/po2lmo
 make && sudo make install
 popd
-# 选择要编译的包 LuCI -> 3. Applications
+# 选择要编译的包 LuCI -> Applications
 make menuconfig
 # 开始编译
 make package/openwrt-dist-luci/compile V=99
@@ -40,3 +41,4 @@ make package/openwrt-dist-luci/compile V=99
   [8]: https://github.com/aa65535/openwrt-shadowvpn
   [R]: https://github.com/aa65535/openwrt-redsocks2
   [S]: http://wiki.openwrt.org/doc/howto/obtain.firmware.sdk
+  [9]: https://github.com/lixingcong/minivtun-openwrt
