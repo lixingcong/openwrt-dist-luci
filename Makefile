@@ -46,6 +46,7 @@ endef
 Package/luci-app-chinadns = $(call Package/openwrt-dist-luci/Default,ChinaDNS,+ChinaDNS)
 Package/luci-app-redsocks2 = $(call Package/openwrt-dist-luci/Default,RedSocks2,+redsocks2)
 Package/luci-app-shadowvpn = $(call Package/openwrt-dist-luci/Default,ShadowVPN,+ShadowVPN)
+Package/luci-app-minivtun = $(call Package/openwrt-dist-luci/Default,Minivtun,+Minivtun)
 Package/luci-app-shadowsocks-spec = $(call Package/openwrt-dist-luci/Default,shadowsocks-libev-spec)
 
 define Package/openwrt-dist-luci/description
@@ -55,6 +56,7 @@ endef
 Package/luci-app-chinadns/description = $(call Package/openwrt-dist-luci/description,ChinaDNS)
 Package/luci-app-redsocks2/description = $(call Package/openwrt-dist-luci/description,RedSocks2)
 Package/luci-app-shadowvpn/description = $(call Package/openwrt-dist-luci/description,ShadowVPN)
+Package/luci-app-minivtun/description = $(call Package/openwrt-dist-luci/description,Minivtun)
 Package/luci-app-shadowsocks-spec/description = $(call Package/openwrt-dist-luci/description,shadowsocks-libev-spec)
 
 define Build/Prepare
@@ -81,6 +83,7 @@ endef
 Package/luci-app-chinadns/postinst = $(call Package/openwrt-dist-luci/postinst,chinadns)
 Package/luci-app-redsocks2/postinst = $(call Package/openwrt-dist-luci/postinst,redsocks2)
 Package/luci-app-shadowvpn/postinst = $(call Package/openwrt-dist-luci/postinst,shadowvpn)
+Package/luci-app-minivtun/postinst = $(call Package/openwrt-dist-luci/postinst,minivtun)
 Package/luci-app-shadowsocks-spec/postinst = $(call Package/openwrt-dist-luci/postinst,shadowsocks)
 
 define Package/openwrt-dist-luci/install
@@ -98,9 +101,11 @@ endef
 Package/luci-app-chinadns/install = $(call Package/openwrt-dist-luci/install,$(1),chinadns)
 Package/luci-app-redsocks2/install = $(call Package/openwrt-dist-luci/install,$(1),redsocks2)
 Package/luci-app-shadowvpn/install = $(call Package/openwrt-dist-luci/install,$(1),shadowvpn)
+Package/luci-app-minivtun/install = $(call Package/openwrt-dist-luci/install,$(1),minivtun)
 Package/luci-app-shadowsocks-spec/install = $(call Package/openwrt-dist-luci/install,$(1),shadowsocks)
 
 $(eval $(call BuildPackage,luci-app-chinadns))
 $(eval $(call BuildPackage,luci-app-redsocks2))
 $(eval $(call BuildPackage,luci-app-shadowvpn))
+$(eval $(call BuildPackage,luci-app-minivtun))
 $(eval $(call BuildPackage,luci-app-shadowsocks-spec))
