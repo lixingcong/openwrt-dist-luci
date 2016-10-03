@@ -61,7 +61,8 @@ o = s:option(ListValue, "route_mode", translate("Routing Mode"))
 o:value("0", translate("Global Mode"))
 o:value("1", translate("Domestic Routes"))
 o:value("2", translate("Foreign Routes"))
-o.default = 0
+o:value("3", translate("Not change routes"))
+o.default = 3
 o.rmempty = false
 
 o = s:option(Value, "route_file", translate("Routing File"))

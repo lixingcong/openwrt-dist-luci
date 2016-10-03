@@ -57,3 +57,7 @@ msgstr "minivtun 运行中"
 
 msgid "minivtun"
 msgstr "minivtun"
+
+msgid "Not change routes"
+msgstr "不改变路由"
+
