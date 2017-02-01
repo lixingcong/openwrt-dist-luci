@@ -67,7 +67,5 @@ o.rmempty = false
 
 o = s:option(Value, "route_file", translate("Routing File"))
 o.datatype = "file"
-o:depends("route_mode", 1)
-o:depends("route_mode", 2)
 
 return m
