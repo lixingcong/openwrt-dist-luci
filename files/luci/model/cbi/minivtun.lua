@@ -33,7 +33,6 @@ o.rmempty = false
 o = s:option(Value, "net", translate("Local Subnet"))
 o.placeholder = "10.7.0.2/24"
 o.default = "10.7.0.2/24"
-o.datatype = "ip4addr"
 o.rmempty = false
 
 o = s:option(Value, "mtu", translate("Override MTU"))
@@ -45,27 +44,12 @@ o.rmempty = false
 o = s:option(Value, "keepalive", translate("Heart-Beats time"))
 o.placeholder = 13
 o.default = 13
-o.datatype = "range(10,20)"
+o.datatype = "range(10,30)"
 o.rmempty = false
 
 o = s:option(Value, "intf", translate("Interface Name"))
 o.placeholder = "mv0"
 o.default = "mv0"
 o.rmempty = false
-
--- Route Configuration
-s = m:section(TypedSection, "minivtun", translate("Routing Configuration"))
-s.anonymous = true
-
-o = s:option(ListValue, "route_mode", translate("Routing Mode"))
-o:value("0", translate("Global Mode"))
-o:value("1", translate("Domestic Routes"))
-o:value("2", translate("Foreign Routes"))
-o:value("3", translate("Not change routes"))
-o.default = 3
-o.rmempty = false
-
-o = s:option(Value, "route_file", translate("Routing File"))
-o.datatype = "file"
 
 return m

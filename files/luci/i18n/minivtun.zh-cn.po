@@ -4,20 +4,11 @@ msgstr "Content-Type: text/plain; charset=UTF-8\n"
 msgid "Heart-Beats time"
 msgstr "心跳包间隔"
 
-msgid "Domestic Routes"
-msgstr "国内路由"
-
 msgid "Enable"
 msgstr "启用"
 
-msgid "Foreign Routes"
-msgstr "国外路由"
-
 msgid "General Setting"
 msgstr "基本设置"
-
-msgid "Global Mode"
-msgstr "全局模式"
 
 msgid "Interface Name"
 msgstr "接口名称"
@@ -34,15 +25,6 @@ msgstr "设置MTU"
 msgid "Password"
 msgstr "密码"
 
-msgid "Routing Configuration"
-msgstr "路由设置"
-
-msgid "Routing File"
-msgstr "路由文件"
-
-msgid "Routing Mode"
-msgstr "路由模式"
-
 msgid "Server Address"
 msgstr "服务器地址"
 
@@ -57,7 +39,3 @@ msgstr "minivtun 运行中"
 
 msgid "minivtun"
 msgstr "minivtun"
-
-msgid "Not change routes"
-msgstr "不改变路由"
-
