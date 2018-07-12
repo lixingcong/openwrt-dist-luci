@@ -13,9 +13,6 @@ msgstr "基本设置"
 msgid "Interface Name"
 msgstr "接口名称"
 
-msgid "Local Subnet"
-msgstr "本地子网"
-
 msgid "Must be the same value with server"
 msgstr "必须与服务端值相同"
 
@@ -39,3 +36,12 @@ msgstr "minivtun 运行中"
 
 msgid "minivtun"
 msgstr "minivtun"
+
+msgid "Local Subnet Family"
+msgstr "本地子网IP版本"
+
+msgid "Local IPv4 Address"
+msgstr "本地子网IPv4地址"
+
+msgid "Local IPv6 Address"
+msgstr "本地子网IPv6地址"
